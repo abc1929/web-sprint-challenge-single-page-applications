@@ -44,11 +44,13 @@ const toppings = [
    "Spinach",
 ];
 
+// initialize state for toppings like "{Bacon: true, ...}"
 const initialToppingsTable = {};
 [...toppings].forEach((i) => {
    initialToppingsTable[i] = false;
 });
 
+// This helper renders sections above the inputs
 const SectionBanner = (props) => {
    const { text, subtext } = props;
    return (
@@ -71,6 +73,7 @@ export default function Form(props) {
    const [comment, setComment] = useState("");
    const [amount, setAmount] = useState("1");
 
+   // handler for topping checkboxes
    const updatetoppings = (e) => {
       if (
          Object.keys(toppingsTable).filter((i) => toppingsTable[i] === true)
@@ -79,11 +82,9 @@ export default function Form(props) {
       ) {
          return;
       }
-      // console.log(e.target);
 
       if (e.target.type === "checkbox") {
          const { name, checked } = e.target;
-         // e.target.value = "dg";
          setToppingsTable({ ...toppingsTable, [name]: checked });
          return;
       }
@@ -97,6 +98,7 @@ export default function Form(props) {
       return amount * (toppingcount * 1.5 + size * 2 + gluten + 8);
    };
 
+   // congregate the states into a final order, post to reqres
    const submit = (e) => {
       props.setCurrentorder({});
       const fullorder = {

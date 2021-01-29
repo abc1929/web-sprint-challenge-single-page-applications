@@ -7,9 +7,6 @@ import Order from "./Components/Order";
 import { NavLink, Route } from "react-router-dom";
 import "./App.css";
 
-// let a = process.env.PUBLIC_URL + "/Pizza.jpg";
-// const test = require(a);
-
 const stores = require("./Data/Stores.json").data;
 
 // converts distance field to strings
@@ -38,7 +35,6 @@ const App = () => {
 
    return (
       <ChakraProvider>
-         {/* {console.log(stores)} */}
          <Box display="flex" flexDirection="column">
             <Nav></Nav>
             <Route exact path="/">
