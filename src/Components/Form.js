@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import {
-   FormControl,
-   FormLabel,
-   FormErrorMessage,
-   FormHelperText,
-} from "@chakra-ui/react";
 
 import { NavLink } from "react-router-dom";
 
 import axios from "axios";
 
 import {
+   FormLabel,
    Input,
    Select,
    Radio,
@@ -21,8 +16,6 @@ import {
    Text,
    Box,
    Button,
-   ButtonGroup,
-   IconButton,
    NumberInput,
    NumberInputField,
    NumberInputStepper,
@@ -105,6 +98,7 @@ export default function Form(props) {
    };
 
    const submit = (e) => {
+      props.setCurrentorder({});
       const fullorder = {
          size: size,
          toppings: Object.keys(toppingsTable)
@@ -134,7 +128,12 @@ export default function Form(props) {
 
          <SectionBanner text="Choice of Size" subtext="Required" />
          <Box width="40%" padding="1% 2%">
-            <Select defaultValue="1" onChange={(e) => setSize(e.target.value)}>
+            <Select
+               defaultValue="1"
+               onChange={(e) => {
+                  setSize(e.target.value);
+               }}
+            >
                <option value={0}> Mini - 8" </option>
                <option value={1}> Small - 10" </option>
                <option value={2}> Medium - 12" </option>

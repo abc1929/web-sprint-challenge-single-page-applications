@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink, Route } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { Text, Box, Button } from "@chakra-ui/react";
 
 export default function Nav(props) {
@@ -8,12 +8,12 @@ export default function Nav(props) {
          <Box>
             <Text fontSize="3xl">Lambda Eats</Text>
          </Box>
-         <Box>
+         <Box width="20vw" display="flex" justifyContent="flex-end">
             <NavLink to="/">
                <Button> Home </Button>
             </NavLink>
             <NavLink to="/help">
-               <Button> Help </Button>
+               <Button marginLeft="12px"> Help </Button>
             </NavLink>
          </Box>
       </nav>

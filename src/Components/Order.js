@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, Route } from "react-router-dom";
-import { Text, Box, Button } from "@chakra-ui/react";
+import React from "react";
+import { Text, Box } from "@chakra-ui/react";
 
 export default function Order(props) {
    const fieldstodisplay = [
@@ -37,7 +36,7 @@ export default function Order(props) {
    };
 
    return (
-      <Box>
+      <Box display="flex" flexDir="column" justifyContent="center">
          <section className="cta-2">
             <Text
                fontSize="4xl"
@@ -56,12 +55,18 @@ export default function Order(props) {
                <Text fontSize="3xl"> Not yet ready... </Text>
             </Box>
          ) : (
-            <Box margin="3%">
+            <Box
+               margin="3%"
+               width="50vw"
+               alignSelf="center"
+               bgColor="#ebedee"
+               padding="2%"
+               borderRadius="16px"
+            >
                {/* {console.log(parsed)} */}
 
                <Text padding="1%" fontSize="3xl">
-                  {" "}
-                  Your Order:{" "}
+                  Your Order:
                </Text>
                <Box>
                   {Object.keys(props.order).map((i) => {
