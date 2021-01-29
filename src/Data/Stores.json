@@ -1,0 +1,46 @@
+{
+   "data": [
+      {
+         "imgsrc": "https://images.unsplash.com/photo-1585159183446-0fc0eaf9e57c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+         "storename": "McDonald's",
+         "tags": ["American", "Fast Food", "Burgers"],
+         "distance": "2",
+         "fee": 5.99
+      },
+      {
+         "imgsrc": "https://images.unsplash.com/photo-1592396195096-b587692e68d8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80",
+         "storename": "sweetgreen",
+         "tags": ["Healthy", "Salads"],
+         "distance": "3",
+         "fee": 4.99
+      },
+      {
+         "imgsrc": "https://images.unsplash.com/photo-1589476993333-f55b84301219?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=582&q=80",
+         "storename": "Starbucks",
+         "tags": ["Cafe", "Coffee & Tea", "Breakfast and Brunch"],
+         "distance": "1",
+         "fee": 3.99
+      },
+      {
+         "imgsrc": "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80",
+         "storename": "Papa John's",
+         "tags": ["Pizza", "Quick Bite"],
+         "distance": "5",
+         "fee": 6.99
+      },
+      {
+         "imgsrc": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=828&q=80",
+         "storename": "Valentino's",
+         "tags": ["Pizza"],
+         "distance": "0",
+         "fee": 4.99
+      },
+      {
+         "imgsrc": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2110&q=80",
+         "storename": "Domino's",
+         "tags": ["Pizza", "Quick Bite"],
+         "distance": "4",
+         "fee": 5.99
+      }
+   ]
+}

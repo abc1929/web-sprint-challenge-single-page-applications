@@ -1,38 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 .App {
-  text-align: center;
+   text-align: center;
+}
+.main {
+   display: flex;
+   flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   padding: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cta {
+   background: top / cover no-repeat url("./Assets/Pizza.jpg");
+
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cta-2 {
+   background: top / cover no-repeat url("./Assets/Pizza.jpg");
+
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.homemain {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-self: center;
+   align-self: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pizzacard {
+   width: 25vw;
+   min-width: 300px;
+   margin: 2%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
