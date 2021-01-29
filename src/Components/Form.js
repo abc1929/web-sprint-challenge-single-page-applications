@@ -178,7 +178,7 @@ export default function Form(props) {
                      onChange={(e) => updatetoppings(e)}
                      isChecked={toppingsTable[i]}
                      checked={toppingsTable[i]}
-                     value={false} //chakra's checkbox behaves naturally here, value is not used, but I have to set it to false and use `checked` for states
+                     value={false} //chakra's checkbox behaves unnaturally here, value is not used, but I have to set it to false and use `checked` for states
                   >
                      <Text> {i}</Text>
                   </Checkbox>
